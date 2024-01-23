@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+}
+.mainImageContainer {
+  display: flex;
+	align-items: center;
+}
+.mainImage {
+	width: 62.1vw;
+	height: auto;
+	margin-left: auto;
+}
+.about {
+  max-width: 46vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.secondImageContainer {
+  display: flex;
+  align-items: center;
+}
+.secondImage {
+  width: 30vw;
+  height: auto;
+  margin: 0 auto;
+}
+.aboutText {
+  font-size: 1.8vw;
+  color: white;
+  text-align: center;
+  line-height: 2.3vw;
+  font-weight: 500;
+  margin-top: 1vw;
+  padding: 0 1vw;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.3vw;
+  margin-top: 1.5vw;
+}
