@@ -3,7 +3,7 @@ import { register } from "swiper/element/bundle";
 
 register();
 
-const Swiper = ({ slides, slidesPerView, spaceBetween }) => {
+const Swiper = ({ slides, slidesPerView, spaceBetween, slidesPerGroup }) => {
 	const swiperRef = useRef(null);
 
 	useEffect(() => {
@@ -13,7 +13,7 @@ const Swiper = ({ slides, slidesPerView, spaceBetween }) => {
 			slidesPerView: slidesPerView,
 			speed: 1500,
 			spaceBetween: spaceBetween,
-			slidesPerGroup: 5,
+			slidesPerGroup: slidesPerGroup,
 			injectStyles: [
 				`.swiper-wrapper{
 					padding-left: 30px;

@@ -1,0 +1,80 @@
+.topMovieItem {
+	cursor: pointer;
+	width: fit-content;
+}
+.movieImageWrapper {
+	position: relative;
+	padding: 10px;
+	left: 115px;
+	z-index: 2;
+	transition: transform 1s ease;
+	width: fit-content;
+}
+.movieImage {
+	width: 280px;
+	height: auto;
+	border-radius: 23px;
+	margin-right: 30px;
+}
+.topMovieItem:hover .movieImageWrapper {
+	transform: scale(1.02);
+}
+.topNumberWrapper {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+@mixin topNumberStyle(
+	$number,
+	$backgroundImage,
+	$backgroundImageHover,
+	$scale: 1
+) {
+	width: 180px;
+	height: 160px;
+
+	&.top#{$number} {
+		background-image: url("../../../assets/images/top-movies/top-numbers/#{$backgroundImage}");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 180px;
+			height: 160px;
+			background-image: url("../../../assets/images/top-movies/top-numbers/#{$backgroundImageHover}");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center center;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		.topMovieItem:hover &::after {
+			opacity: 1;
+		}
+		@if $number == 10 {
+			transform: scale($scale);
+		}
+	}
+}
+
+.topNumber {
+	@include topNumberStyle(1, "first.svg", "firstH.svg");
+	@include topNumberStyle(2, "second.svg", "secondH.svg");
+	@include topNumberStyle(3, "third.svg", "thirdH.svg");
+	@include topNumberStyle(4, "fourth.svg", "fourthH.svg");
+	@include topNumberStyle(5, "fifth.svg", "fifthH.svg");
+	@include topNumberStyle(6, "sixth.svg", "sixthH.svg");
+	@include topNumberStyle(7, "seventh.svg", "seventhH.svg");
+	@include topNumberStyle(8, "eighth.svg", "eighthH.svg");
+	@include topNumberStyle(9, "ninth.svg", "ninthH.svg");
+	@include topNumberStyle(10, "tenth.svg", "tenthH.svg", $scale: 1.35);
+}

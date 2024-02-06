@@ -1,8 +1,5 @@
 "use client";
 
-import { Image } from "next/image";
-import { StaticImageData } from "next/image";
-
 import styles from "./NewMovies.module.scss";
 import NewMoviesItem, {
 	NewMoviesItemProps,
@@ -29,10 +26,11 @@ const NewMovies = ({ movies }: NewMoviesProps) => {
 	return (
 		<div className={styles.newMovies}>
 			<h2 className={styles.title}>Новинки</h2>
-			<div className={styles.movieWrapper}>
+			<div className={styles.moviesWrapper}>
 				<Swiper
 					slides={swiperMovies}
 					slidesPerView={5}
+					slidesPerGroup={5}
 					spaceBetween={0}
 				/>
 			</div>
