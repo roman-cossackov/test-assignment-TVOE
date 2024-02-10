@@ -29,9 +29,9 @@ const NewMovies = ({ movies }: NewMoviesProps) => {
 			<div className={styles.moviesWrapper}>
 				<Swiper
 					slides={swiperMovies}
-					slidesPerView={5}
+					slidesPerView={4}
 					slidesPerGroup={5}
-					spaceBetween={0}
+					spaceBetween={-180}
 				/>
 			</div>
 		</div>

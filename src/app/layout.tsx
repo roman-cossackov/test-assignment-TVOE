@@ -1,22 +1,27 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
+import Sidebar from "@/components/UI/Sidebar/Sidebar";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'TVOE',
-  description: 'Created by me',
-}
+	title: "TVOE",
+	description: "Created by me",
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+	return (
+		<html lang="en">
+			<body className={inter.className}>
+				<Sidebar />
+				<div className="content">{children}</div>
+			</body>
+		</html>
+	);
 }

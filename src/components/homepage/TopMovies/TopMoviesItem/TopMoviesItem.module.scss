@@ -38,7 +38,7 @@
 	height: 160px;
 
 	&.top#{$number} {
-		background-image: url("../../../assets/images/top-movies/top-numbers/#{$backgroundImage}");
+		background-image: url("../../../../assets/images/top-movies/top-numbers/#{$backgroundImage}");
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center center;
@@ -49,7 +49,7 @@
 			position: absolute;
 			width: 180px;
 			height: 160px;
-			background-image: url("../../../assets/images/top-movies/top-numbers/#{$backgroundImageHover}");
+			background-image: url("../../../../assets/images/top-movies/top-numbers/#{$backgroundImageHover}");
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center center;

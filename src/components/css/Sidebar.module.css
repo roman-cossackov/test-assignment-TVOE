@@ -1,0 +1,31 @@
+.sidebar {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  background: red;
+  padding: 20px 20px 20px 20px;
+}
+.sidebar svg {
+  cursor: pointer;
+}
+.sidebar svg:hover path {
+  fill: white;
+}
+
+.logo {
+  margin: 0px 0px 80px 5px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+}
+
+.content img {
+  margin-bottom: 20px;
+  width: 44px;
+  height: 44px;
+  color: red;
+}/*# sourceMappingURL=Sidebar.module.css.map */

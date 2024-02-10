@@ -1,0 +1,280 @@
+.topMovieItem {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.movieImageWrapper {
+  position: relative;
+  padding: 10px;
+  left: 115px;
+  z-index: 2;
+  transition: transform 1s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.movieImage {
+  width: 280px;
+  height: auto;
+  border-radius: 23px;
+  margin-right: 30px;
+}
+
+.topMovieItem:hover .movieImageWrapper {
+  transform: scale(1.02);
+}
+
+.topNumberWrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.topNumber {
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+  width: 180px;
+  height: 160px;
+}
+.topNumber.top1 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/first.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top1::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/firstH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top1::after {
+  opacity: 1;
+}
+.topNumber.top2 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/second.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top2::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/secondH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top2::after {
+  opacity: 1;
+}
+.topNumber.top3 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/third.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top3::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/thirdH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top3::after {
+  opacity: 1;
+}
+.topNumber.top4 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/fourth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top4::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/fourthH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top4::after {
+  opacity: 1;
+}
+.topNumber.top5 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/fifth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top5::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/fifthH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top5::after {
+  opacity: 1;
+}
+.topNumber.top6 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/sixth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top6::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/sixthH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top6::after {
+  opacity: 1;
+}
+.topNumber.top7 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/seventh.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top7::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/seventhH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top7::after {
+  opacity: 1;
+}
+.topNumber.top8 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/eighth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top8::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/eighthH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top8::after {
+  opacity: 1;
+}
+.topNumber.top9 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/ninth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+.topNumber.top9::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/ninthH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top9::after {
+  opacity: 1;
+}
+.topNumber.top10 {
+  background-image: url("../../../../assets/images/top-movies/top-numbers/tenth.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+  transform: scale(1.35);
+}
+.topNumber.top10::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-image: url("../../../../assets/images/top-movies/top-numbers/tenthH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.topMovieItem:hover .topNumber.top10::after {
+  opacity: 1;
+}/*# sourceMappingURL=TopMoviesItem.module.css.map */

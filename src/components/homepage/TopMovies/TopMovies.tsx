@@ -5,7 +5,7 @@ import styles from "./TopMovies.module.scss";
 import TopMoviesItem, {
 	TopMoviesItemProps,
 } from "./TopMoviesItem/TopMoviesItem";
-import Swiper from "../UI/Swiper/Swiper";
+import Swiper from "@/components/UI/Swiper/Swiper";
 
 interface TopMoviesProps {
 	movies: TopMoviesItemProps[];

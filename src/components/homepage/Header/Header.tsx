@@ -3,7 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 
 import styles from "./Header.module.scss";
-import Button, {ButtonTheme} from "../UI/Button/Button";
+import Button, { ButtonTheme } from "../../UI/Button/Button";
 
 interface HeaderProps {
 	mainImage: StaticImageData;
@@ -13,12 +13,12 @@ interface HeaderProps {
 
 const Header = ({ mainImage, secondImage, aboutText }: HeaderProps) => {
 	return (
-		<div className={styles.header}>
+		<header className={styles.header}>
 			<div className={styles.mainImageContainer}>
 				<Image
 					className={styles.mainImage}
 					src={mainImage}
-					alt="Header main image"
+					alt="main-img"
 					priority={true}
 				/>
 			</div>
@@ -27,16 +27,28 @@ const Header = ({ mainImage, secondImage, aboutText }: HeaderProps) => {
 					<Image
 						className={styles.secondImage}
 						src={secondImage}
-						alt="Header second image"
+						alt="second-img"
 					/>
 				</div>
 				<p className={styles.aboutText}>{aboutText}</p>
 				<div className={styles.buttonsContainer}>
-					<Button title={"Смотреть"} theme={ButtonTheme.GRADIENT}/>
-					<Button title={"О фильме"} theme={ButtonTheme.TRANSPARENT}/>
+					<Button
+						theme={ButtonTheme.GRADIENT}
+						width={210}
+						height={65}
+					>
+						Смотреть
+					</Button>
+					<Button
+						theme={ButtonTheme.TRANSPARENT}
+						width={210}
+						height={65}
+					>
+						О фильме
+					</Button>
 				</div>
 			</div>
-		</div>
+		</header>
 	);
 };
 

@@ -1,0 +1,27 @@
+.topMovies {
+  margin-bottom: 50px;
+}
+
+.title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+.title .top {
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #6a11cb, #2575fc 100%, #2575fc 0);
+  background-size: 200% 200%;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: #09090c;
+  padding-right: 4px;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  margin-right: 12px;
+  position: relative;
+  top: 6px;
+}/*# sourceMappingURL=TopMovies.module.css.map */

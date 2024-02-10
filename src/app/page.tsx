@@ -1,7 +1,7 @@
 import styles from "./page.module.scss";
-import Header from "@/components/Header/Header";
-import NewMovies from "@/components/NewMovies/NewMovies";
-import TopMovies from "@/components/TopMovies/TopMovies";
+import Header from "@/components/homepage/Header/Header";
+import NewMovies from "@/components/homepage/NewMovies/NewMovies";
+import TopMovies from "@/components/homepage/TopMovies/TopMovies";
 
 import image3 from "@/assets/images/header/image3.jpg";
 import image4 from "@/assets/images/header/image4.png";

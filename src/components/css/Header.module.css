@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.mainImageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.mainImage {
+  width: 1000px;
+  height: auto;
+  margin-left: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.about {
+  max-width: 700px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 25px;
+}
+
+.secondImageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.secondImage {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.aboutText {
+  font-size: 1.7rem;
+  color: white;
+  text-align: center;
+  line-height: 11mm;
+  font-weight: 500;
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.3vw;
+  margin-top: 35px;
+}/*# sourceMappingURL=Header.module.css.map */
