@@ -7,7 +7,7 @@ import LogoIcon from "@/assets/icons/sidebar/Logo.svg";
 import SearchIcon from "@/assets/icons/sidebar/Search.svg";
 import HomeIcon from "@/assets/icons/sidebar/Home.svg";
 import MoviesIcon from "@/assets/icons/sidebar/Movies.svg";
-import TvIcon from "@/assets/icons/sidebar/Tv.svg";
+import TvIcon from "@/assets/icons/sidebar/TV.svg";
 import FavouriteIcon from "@/assets/icons/sidebar/Favourite.svg";
 import AccountIcon from "@/assets/icons/sidebar/Account.svg";
 import BackIcon from "@/assets/icons/sidebar/Back.svg";
