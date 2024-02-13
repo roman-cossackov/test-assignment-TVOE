@@ -33,6 +33,7 @@ const Header = ({
 					className={styles.mainImage}
 					src={mainImage}
 					alt="main-img"
+					priority
 				/>
 			</div>
 			<div className={styles.description}>

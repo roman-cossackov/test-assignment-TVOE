@@ -8,15 +8,17 @@ import Swiper from "@/components/UI/Swiper/Swiper";
 
 interface NewMoviesProps {
 	movies: NewMoviesItemProps[];
+	title: string;
+	itemHasTitle: boolean;
 }
 
-const NewMovies = ({ movies }: NewMoviesProps) => {
+const NewMovies = ({ movies, title, itemHasTitle }: NewMoviesProps) => {
 	const swiperMovies = movies.map((movie) => {
 		return {
 			element: (
 				<NewMoviesItem
 					movieImage={movie.movieImage}
-					title={movie.title}
+					title={itemHasTitle ? movie.title : ''}
 					rating={movie.rating}
 				/>
 			),
@@ -25,7 +27,7 @@ const NewMovies = ({ movies }: NewMoviesProps) => {
 	});
 	return (
 		<div className={styles.newMovies}>
-			<h2 className={styles.title}>Новинки</h2>
+			<h2 className={styles.title}>{title}</h2>
 			<div className={styles.moviesWrapper}>
 				<Swiper
 					slides={swiperMovies}

@@ -35,7 +35,7 @@ const TopMovies = ({ movies }: TopMoviesProps) => {
 						slides={swiperMovies}
 						slidesPerView={3}
 						slidesPerGroup={3}
-						spaceBetween={-100}
+						spaceBetween={-50}
 					/>
 				</div>
 			</div>

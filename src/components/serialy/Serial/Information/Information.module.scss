@@ -1,0 +1,38 @@
+.information {
+	margin-top: -20px;
+}
+.title {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.infoTitle {
+	color: #ffffff4d;
+	margin-bottom: 20px;
+	max-width: fit-content;
+	font-size: 1.2rem;
+}
+.infoText {
+	color: white;
+	max-width: fit-content;
+	margin-bottom: 30px;
+	font-size: 1.2rem;
+}
+.container {
+	display: inline-flex;
+	flex-direction: column;
+	max-width: fit-content;
+	margin-right: 80px;
+}
+.infoTextBack {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.1) 0%,
+		rgba(255, 255, 255, 0.125) 50%,
+		rgba(255, 255, 255, 0.1) 100%
+	);
+	padding: 6px 30px 6px 6px;
+	border-radius: 5px;
+	font-size: 1.1rem;
+}

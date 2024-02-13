@@ -6,11 +6,13 @@ interface ButtonProps {
 	children: ReactNode;
 	width: number;
 	height: number;
+	
 }
 
 export enum ButtonTheme {
 	GRADIENT = "gradient",
 	TRANSPARENT = "transparent",
+	ROUND = "round",
 }
 
 const Button = ({
@@ -21,7 +23,7 @@ const Button = ({
 }: ButtonProps) => {
 	return (
 		<button
-			className={`${styles.Button} ${styles[theme]}`}
+			className={`${styles.button} ${styles[theme]}`}
 			style={{ width: `${width}px`, height: `${height}px` }}
 		>
 			{children}

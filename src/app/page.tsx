@@ -9,6 +9,9 @@ import CardN1 from "@/assets/images/new-movies/Card1.png";
 import CardN2 from "@/assets/images/new-movies/Card2.png";
 import CardN3 from "@/assets/images/new-movies/Card3.png";
 import CardN4 from "@/assets/images/new-movies/Card4.png";
+import CardN5 from "@/assets/images/serialy/wednesday/similar/Card5.png";
+import CardN6 from "@/assets/images/serialy/wednesday/similar/Card6.png";
+import CardN7 from "@/assets/images/serialy/wednesday/similar/Card7.png";
 import CardT1 from "@/assets/images/top-movies/cards/Card1.png";
 import CardT2 from "@/assets/images/top-movies/cards/Card2.png";
 import CardT3 from "@/assets/images/top-movies/cards/Card3.png";
@@ -30,30 +33,13 @@ export default function Home() {
 			title: "Поймай, меня если сможешь",
 			rating: 7.0,
 		},
-		{ movieImage: CardN1, title: "Синий жук 2", rating: 10 },
+		{ movieImage: CardN5, title: "Мэр Кингстауна", rating: 10 },
 		{
-			movieImage: CardN2,
-			title: "Домашняя игра 2",
+			movieImage: CardN6,
+			title: "Пять ночей с Фредди",
 			rating: 6.9,
 		},
-		{ movieImage: CardN3, title: "Салют 7 2", rating: 5.8 },
-		{
-			movieImage: CardN4,
-			title: "Поймай, меня если сможешь 2",
-			rating: 7.0,
-		},
-		{ movieImage: CardN1, title: "Синий жук 3", rating: 10 },
-		{
-			movieImage: CardN2,
-			title: "Домашняя игра 3",
-			rating: 6.9,
-		},
-		{ movieImage: CardN3, title: "Салют 7 3", rating: 5.8 },
-		{
-			movieImage: CardN4,
-			title: "Поймай, меня если сможешь 3",
-			rating: 7.0,
-		},
+		{ movieImage: CardN7, title: "Балерина", rating: 5.8 },
 	];
 
 	const topMovies = [
@@ -108,7 +94,11 @@ export default function Home() {
 					"Неувядающий авантюрист и пытливый археолог-исследователь по‑прежнему в седле."
 				}
 			/>
-			<NewMovies movies={newMovies} />
+			<NewMovies
+				movies={newMovies}
+				title={"Новинки"}
+				itemHasTitle={true}
+			/>
 			<TopMovies movies={topMovies} />
 		</main>
 	);

@@ -15,9 +15,7 @@ const Swiper = ({ slides, slidesPerView, spaceBetween, slidesPerGroup }) => {
 			spaceBetween: spaceBetween,
 			slidesPerGroup: slidesPerGroup,
 			injectStyles: [
-				`.swiper-wrapper{
-					padding-left: 30px;
-				}.swiper-button-next,
+				`.swiper-button-next,
 				.swiper-button-prev {
 					width: 15px;
 					height: 15px;
@@ -48,15 +46,16 @@ const Swiper = ({ slides, slidesPerView, spaceBetween, slidesPerGroup }) => {
   				opacity: 0;
   				cursor: auto;
 				pointer-events: none;
-				}`,
+				}
+				`,
 			],
 		};
 		Object.assign(swiperContainer, params);
 		swiperContainer.initialize();
-	}, [slidesPerView, spaceBetween]);
+	}, [slidesPerView, spaceBetween, slidesPerGroup]);
 
 	return (
-		<swiper-container ref={swiperRef} init="false">
+		<swiper-container ref={swiperRef} init={false}>
 			{slides.map((slide) => (
 				<swiper-slide key={slide.key}>{slide.element}</swiper-slide>
 			))}

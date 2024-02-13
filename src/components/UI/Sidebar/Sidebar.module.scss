@@ -1,10 +1,11 @@
 .sidebar {
 	position: fixed;
-	width: 100px;
+	width: 160px;
 	height: 100vh;
-	background: red;
-	padding: 20px 20px 20px 20px;
+	background: #09090c;
+	padding: 30px 20px 20px 40px;
 	& svg {
+		display: block;
 		cursor: pointer;
 		&:hover path {
 			fill: white;
@@ -12,13 +13,27 @@
 	}
 }
 .logo {
-	margin: 0px 0px 80px 5px;
+	margin: 0px 0px 90px 0px;
+	height: fit-content;
+	svg {
+		width: 40px;
+		height: 40px;
+	}
 }
 .navigation {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 550px;
+	svg {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		margin-bottom: 20px;
+		path {
+			margin: 0 auto;
+		}
+	}
 }
 .content img {
 	margin-bottom: 20px;

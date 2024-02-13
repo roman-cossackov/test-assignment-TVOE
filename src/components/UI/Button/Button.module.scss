@@ -1,4 +1,4 @@
-.Button {
+.button {
 	border-radius: 13px;
 	border: 0px;
 	color: white;
@@ -19,6 +19,18 @@
 		transition: opacity 0.5s ease;
 		&:hover {
 			opacity: 0.7;
+		}
+	}
+
+	&.round {
+		border-radius: 50%;
+		background-color: rgba(37, 33, 35, 0.8);
+		transition: background-color 0.5s ease;
+		&:hover {
+			background-color: rgba(105, 102, 103, 0.8);
+		}
+		&.active {
+
 		}
 	}
 }

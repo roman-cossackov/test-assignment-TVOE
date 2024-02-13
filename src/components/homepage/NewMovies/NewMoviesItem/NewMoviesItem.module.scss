@@ -1,4 +1,4 @@
-.newMovieItem {
+.newMoviesItem {
 	position: relative;
 	padding: 20px;
 	transition: transform 0.6s ease;
@@ -32,4 +32,9 @@
 	color: white;
 	font-weight: 600;
 	margin-top: 15px;
+	// text-decoration: underline black;
+}
+.lastItem {
+	background: red;
+	width: fit-content;
 }
